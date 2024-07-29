@@ -1,0 +1,11 @@
+import java.io.*;
+
+public class Solution {
+    public static void main(String[] args) throws IOException {
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+        String input = reader.readLine();
+        StringBuilder result = new StringBuilder();
+        for (char c : input.toCharArray()) result.append((char) (Character.isLowerCase(c) ? c - 32 : c + 32));
+        System.out.println("Case Cascade Magic Unleashed! The " + result + " transformation is complete.");
+    }
+}
